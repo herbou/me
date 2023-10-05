@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Hamza Herbou">
+    <meta name="description" content="Hamza Herbou's personal contact social medias and portfolios links">
+    <meta name="keywords" content="hamzaherbou, hamza-herbou, hamza_herbou, herbou, unity, gamedev, game dev, unity 3d, unity 2d, unity engine, graphic design, unity tutorials, vector design, hamza herbou, unity packages">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Hamza Herbou">
+	<link rel="icon" type="image/x-icon" href="./favicon.png">
+	<title>Hamza Herbou</title>
+	<script src="./particles.min.js"></script>
+	<style>
+	    *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: sans-serif;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			background: #16131e;
+			color: #fff;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+            border-bottom: solid 8px #8824f9;
+		}
+		h1 {
+		    margin-top:.4rem;
+			letter-spacing: .1rem;
+    		height: 2rem;
+		}
+		.social-media {
+		    position: relative;
+		    z-index: 200;
+			display: flex;
+			gap: 20px;
+			flex-direction: row;
+			margin-top: 1rem;
+		}
+		.social-media div {
+			display: flex;
+    		height: 28px;
+			gap: 20px;
+		}
+		.social-media div a {
+			transform-origin: bottom center;
+			position: relative;
+			filter: saturate(0) brightness(5);
+			opacity: 0.6;
+		}
+		.social-media div a:before {
+			position: absolute;
+			content: attr(label);
+			text-decoration: none;
+			color: #888;
+			font-size: 0.8rem;
+			letter-spacing: .05rem;
+			left: 50%;
+			transform: translate(-50%, 3px);
+			top: -1.1rem;
+			opacity: 0;
+			transition: opacity 500ms, transform 400ms;
+		}
+
+		.social-media div a:hover {
+			filter: saturate(1);
+			opacity: 1;
+		}
+
+		.social-media div a:hover:before {
+			opacity: 1;
+			transform: translate(-50%, 1px);
+		}
+
+		figure img {
+		    pointer-events: none;
+		    position: relative;
+		    z-index: 200;
+		    width: 150px;
+		    height: 150px;
+		    border-radius: 10rem;
+		    border: solid 4px #fff;
+		    box-shadow: 0px 10px 20px 0px #00000099;
+		}
+
+        .typewriter {
+            margin-top: .6rem;
+            margin-bottom: 1.6rem;
+        }
+        
+		.typewriter span {
+		    color: #34c3df;
+		    font-size: 1.2rem;
+			display: none;
+			width: calc(.15rem + (1ch * var(--chars)));
+			overflow: hidden;
+			border-right: .15rem solid ;
+			white-space: nowrap;
+			font-family: monospace;
+			animation: 
+					typing 2s steps(var(--chars)),   
+					blink .5s step-end infinite alternate;
+		}
+		
+
+		.particles-js-canvas-el {
+			position: absolute;
+			inset: 0;
+		}
+		
+
+		@keyframes typing { from { width: 0% } }
+		@keyframes blink  {	50%  { border-color: transparent } }
+		
+		
+		
+		@media  screen and (max-width: 600px) {
+			.social-media {
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+    		.social-media div {
+    			gap: 38px;
+    		}
+		}
+
+
+	</style>
+</head>
+<body id="particles-js">
+    
+	<figure>
+		<img src="./profile-pic.png">
+	</figure>
+	
+	<div>
+		<h1>Hamza Herbou</h1>
+	</div>
+	
+	<div class="typewriter" >
+		<span style="--chars: 14">Game Developer</span>
+		<span style="--chars: 14">UI/UX Designer</span>
+		<span style="--chars: 16">Graphic Designer</span>
+		<span style="--chars: 16">JavaScript lover</span>
+		<span style="--chars: 16">----------------</span>
+	</div>
+	
+	<div class="social-media">
+		<div>
+			<a label="Codepen" target="_blank" href="https://codepen.io/HamzaHerbou" ><img alt="Hamza Herbou | Codepen" width="28px" src="https://img.icons8.com/ios-filled/344/ffffff/codepen.png" /></a>
+			<a label="Github" target="_blank" href="https://github.com/herbou" ><img alt="Hamza Herbou | Github" width="28px" src="https://img.icons8.com/ios-glyphs/344/ffffff/github.png" /></a>
+			<a label="Instagram" target="_blank" href="https://instagram.com/hamza_herbou" ><img alt="Hamza Herbou | Instagram" width="28px" src="https://img.icons8.com/material-outlined/344/ffffff/instagram-new--v1.png" /></a>
+			<a label="Facebook" target="_blank" href="https://facebook.com/hamza.herbou" ><img alt="Hamza Herbou | Facebook" width="28px" src="https://img.icons8.com/ios-glyphs/30/1778f2/facebook-new.png" /></a>
+		</div>
+		<div>
+			<a label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/hamza-herbou-a39955152/" ><img alt="Hamza Herbou | LinkedIn" width="28px" src="https://img.icons8.com/fluent-systems-filled/50/0077b5/linkedin.png" /></a>
+			<a label="YouTube" target="_blank" href="https://youtube.com/hamza-herbou" ><img alt="Hamza Herbou | YouTube" width="28px" src="https://img.icons8.com/fluent-systems-filled/50/fa314a/youtube-play.png" /></a>
+			<a label="Dribbble" target="_blank" href="https://dribbble.com/herbou" ><img alt="Hamza Herbou | Dribbble" width="28px" src="https://img.icons8.com/fluent-systems-filled/48/ea4c89/dribbble.png" /></a>
+			<a label="Behance" target="_blank" href="https://behance.net/hamza_herbou" ><img alt="Hamza Herbou | Behance" width="28px" src="https://img.icons8.com/fluent-systems-filled/50/053eff/behance.png" /></a>
+		</div>
+	</div>
+	
+	
+	<script>
+	    const _0x55e270=_0x5424;(function(_0x262186,_0x9e2277){const _0x34ece7=_0x5424,_0xf0c992=_0x262186();while(!![]){try{const _0x3cba3b=parseInt(_0x34ece7(0x13b))/0x1*(parseInt(_0x34ece7(0x145))/0x2)+-parseInt(_0x34ece7(0x13e))/0x3*(-parseInt(_0x34ece7(0x147))/0x4)+-parseInt(_0x34ece7(0x141))/0x5+parseInt(_0x34ece7(0x142))/0x6+-parseInt(_0x34ece7(0x144))/0x7+-parseInt(_0x34ece7(0x148))/0x8+parseInt(_0x34ece7(0x149))/0x9*(parseInt(_0x34ece7(0x146))/0xa);if(_0x3cba3b===_0x9e2277)break;else _0xf0c992['push'](_0xf0c992['shift']());}catch(_0x4e33fb){_0xf0c992['push'](_0xf0c992['shift']());}}}(_0x44a6,0xf33dd));const textes=document[_0x55e270(0x13f)](_0x55e270(0x14a));let prevText=textes[textes['length']-0x1],i=0x0;function _0x5424(_0xe2a587,_0x413880){const _0x44a675=_0x44a6();return _0x5424=function(_0x54245a,_0x53dcd2){_0x54245a=_0x54245a-0x13b;let _0x438daf=_0x44a675[_0x54245a];return _0x438daf;},_0x5424(_0xe2a587,_0x413880);}animate(),setInterval(_0x489075=>animate(),0x1388);function _0x44a6(){const _0x3c1217=['display','8576495irBFyO','1305996yYfMJW','length','13104406npboSj','16pTDWUx','28092210UfegUs','32AHUuFv','15515752yzzRnz','9gRDwJm','.typewriter\x20span','218549ZAWucD','style','block','655449ibIEfo','querySelectorAll'];_0x44a6=function(){return _0x3c1217;};return _0x44a6();}function animate(){const _0x4e5eda=_0x55e270;let _0x40dc5e=i++%textes[_0x4e5eda(0x143)];prevText[_0x4e5eda(0x13c)][_0x4e5eda(0x140)]='none',textes[_0x40dc5e][_0x4e5eda(0x13c)][_0x4e5eda(0x140)]=_0x4e5eda(0x13d),prevText=textes[_0x40dc5e];}
+
+	    const config = 
+	    particlesJS.load('particles-js', './particles-config.json')
+	</script>
+	
+</body>
+</html>
